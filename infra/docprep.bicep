@@ -45,7 +45,7 @@ module formRecognizerRoleUser 'core/security/role.bicep' = {
   }
 }
 
-// Used by prepdocs
+// Used by prepdocs kape
 // Form recognizer
 output AZURE_FORMRECOGNIZER_SERVICE string = formRecognizer.outputs.name
 output AZURE_FORMRECOGNIZER_RESOURCE_GROUP string = formRecognizerResourceGroup.name
