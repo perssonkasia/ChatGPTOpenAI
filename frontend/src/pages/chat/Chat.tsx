@@ -624,7 +624,7 @@ const Chat = () => {
                         {!messages || messages.length < 1 ? (
                             <Stack className={styles.chatEmptyState}>
                                 <img
-                                    src={Contoso}
+                                    src={TV2}
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
