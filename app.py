@@ -225,7 +225,8 @@ def init_openai_client(use_data=SHOULD_USE_DATA):
         }
 
         if use_data:
-            base_url = f"{str(endpoint).rstrip('/')}/openai/deployments/{deployment}/extensions"
+           # base_url = f"{str(endpoint).rstrip('/')}/openai/deployments/{deployment}/extensions"
+            base_url = AZURE_OPENAI_ENDPOINT 
             azure_openai_client = AsyncAzureOpenAI(
                 base_url=str(base_url),
                 api_version=AZURE_OPENAI_PREVIEW_API_VERSION,
